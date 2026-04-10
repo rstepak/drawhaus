@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# loose source images in project root
+/*.png
+/*.jpg
+/*.jpeg
+Screenshot*
