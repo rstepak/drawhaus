@@ -77,7 +77,7 @@ export const COMPETITIONS: Competition[] = [
   {
     id: 'rolex-sub-001',
     title: 'Rolex Submariner Date',
-    image: '/images/rolex-submariner.jpg',
+    image: '/images/rolex.jpg',
     creatorHandle: '@alexwatches',
     creatorAvatar: 'AW',
     prizeValue: 9500,
