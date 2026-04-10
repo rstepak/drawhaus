@@ -3,7 +3,7 @@ import Nav from '@/components/ui/Nav';
 import Footer from '@/components/ui/Footer';
 
 export const metadata: Metadata = {
-  title: 'Terms & Conditions — Drawhaus',
+  title: 'Terms & Conditions | Drawhaus',
   description:
     'Drawhaus prize competition terms and conditions. Read before entering any competition.',
 };
@@ -58,7 +58,7 @@ export default function TermsPage() {
           {/* Draft badge */}
           <div className="inline-flex items-center gap-2 border border-gold px-3 py-1.5 mb-8" style={{ borderColor: 'rgba(201,168,76,0.4)', background: 'rgba(201,168,76,0.06)' }}>
             <span className="text-gold text-[10px] tracking-[0.2em] uppercase">
-              Draft — Not yet in effect
+              Draft. Not yet in effect
             </span>
           </div>
 

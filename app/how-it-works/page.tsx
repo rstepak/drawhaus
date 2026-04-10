@@ -5,7 +5,7 @@ import Accordion from '@/components/ui/Accordion';
 import type { AccordionItem } from '@/components/ui/Accordion';
 
 export const metadata: Metadata = {
-  title: 'How It Works — Drawhaus',
+  title: 'How It Works | Drawhaus',
   description:
     'Everything you need to know about entering Drawhaus prize competitions, from buying tickets to the live draw and claiming your prize.',
 };
@@ -27,12 +27,12 @@ const sections: { category: string; items: AccordionItem[] }[] = [
       {
         question: 'Do I have to buy tickets to enter?',
         answer:
-          'No. Every Drawhaus competition includes a free postal entry route. To enter for free, send a handwritten postcard or letter (no mechanically produced entries) to our registered address, clearly stating your full name, email address, date of birth, and the specific competition you wish to enter. Postal entries have exactly the same chance of winning as purchased tickets. Only the cost of postage applies — no purchase necessary.',
+          'No. Every Drawhaus competition includes a free postal entry route. To enter for free, send a handwritten postcard or letter (no mechanically produced entries) to our registered address, clearly stating your full name, email address, date of birth, and the specific competition you wish to enter. Postal entries have exactly the same chance of winning as purchased tickets. Only the cost of postage applies. No purchase necessary.',
       },
       {
         question: 'Is Drawhaus legal?',
         answer:
-          'Yes. Drawhaus operates under UK prize competition law. Our competitions are structured as skill-based competitions, not lotteries, which means they fall outside the regulated gambling framework under the Gambling Act 2005. A skill question is required as part of entry. A genuine free postal entry route is always available. We are registered as a company in England and Wales.',
+          'Yes. Drawhaus operates under UK prize competition law. Our competitions are structured as skill based competitions, not lotteries, which means they fall outside the regulated gambling framework under the Gambling Act 2005. A skill question is required as part of entry. A genuine free postal entry route is always available. We are registered as a company in England and Wales.',
       },
       {
         question: 'How do I enter a competition?',
@@ -57,7 +57,7 @@ const sections: { category: string; items: AccordionItem[] }[] = [
       {
         question: 'Can I buy multiple tickets?',
         answer:
-          'Yes. You can purchase multiple tickets to increase your chances of winning. Bulk purchase discounts may be available on selected competitions — these will be shown at checkout.',
+          'Yes. You can purchase multiple tickets to increase your chances of winning. Bulk purchase discounts may be available on selected competitions. These will be shown at checkout.',
       },
       {
         question: 'Is there a ticket limit?',
@@ -112,7 +112,7 @@ const sections: { category: string; items: AccordionItem[] }[] = [
       {
         question: 'Are prizes verified before the draw goes live?',
         answer:
-          "Yes. Every prize must be physically verified and confirmed to be in the creator's possession before a competition is approved and made live on the platform. We do not allow draws to go live until this verification step is complete. This is a non-negotiable part of how Drawhaus operates.",
+          "Yes. Every prize must be physically verified and confirmed to be in the creator's possession before a competition is approved and made live on the platform. We do not allow draws to go live until this verification step is complete. This is a non negotiable part of how Drawhaus operates.",
       },
       {
         question: 'Are prizes taxable?',
@@ -122,7 +122,7 @@ const sections: { category: string; items: AccordionItem[] }[] = [
       {
         question: 'Can I take a cash alternative?',
         answer:
-          'Whether a cash alternative is available will be stated on the individual competition page. Not all competitions will offer a cash alternative — this is at the discretion of the creator listing the prize.',
+          'Whether a cash alternative is available will be stated on the individual competition page. Not all competitions will offer a cash alternative. This is at the discretion of the creator listing the prize.',
       },
       {
         question: "What if I don't receive my prize?",
@@ -142,7 +142,7 @@ const sections: { category: string; items: AccordionItem[] }[] = [
       {
         question: 'How does creator payment work?',
         answer:
-          'Once the draw closes and the winner is confirmed, creators receive their earnings — ticket revenue minus the Drawhaus platform fee — within a specified number of business days. Full payment terms are outlined in the creator agreement.',
+          'Once the draw closes and the winner is confirmed, creators receive their earnings (ticket revenue minus the Drawhaus platform fee) within a specified number of business days. Full payment terms are outlined in the creator agreement.',
       },
       {
         question: 'What can I list as a prize?',
@@ -185,7 +185,7 @@ export default function HowItWorksPage() {
           </h1>
           <p className="text-muted text-base leading-relaxed max-w-lg">
             How Drawhaus works, what your rights are as an entrant, and how
-            prizes are verified and awarded — all in one place.
+            prizes are verified and awarded, all in one place.
           </p>
         </div>
 

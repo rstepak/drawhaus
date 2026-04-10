@@ -100,7 +100,7 @@ export default function WaitlistForm({ hint }: WaitlistFormProps) {
         <p className="mt-3 text-xs text-red-400 tracking-wide">{message}</p>
       )}
       <p className="mt-4 text-xs text-muted tracking-wide">
-        {hint ?? 'UK, Australia & New Zealand only · Launching 2026 · No spam.'}
+        {hint ?? 'UK, Australia & New Zealand only. Launching 2026. No spam.'}
       </p>
     </form>
   );

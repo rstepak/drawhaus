@@ -25,7 +25,7 @@ export default function Hero() {
           <div className="max-w-2xl">
             {/* Label */}
             <p className="animate-fade-up text-xs text-gold tracking-[0.25em] uppercase mb-8">
-              Invitation-only · Launching 2026
+              Invitation only  Launching 2026
             </p>
 
             {/* Headline */}

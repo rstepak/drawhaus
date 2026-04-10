@@ -244,7 +244,7 @@ export default function CheckoutModal({
                   onClick={handlePurchase}
                   className="w-full py-3.5 text-[14px] tracking-[0.15em] uppercase bg-gold text-background font-semibold hover:bg-gold-light transition-colors duration-150 animate-pulse-gold"
                 >
-                  Complete purchase · £{totalPrice.toFixed(2)}
+                  Complete purchase £{totalPrice.toFixed(2)}
                 </button>
 
                 {/* Stripe placeholder badge */}
@@ -299,7 +299,7 @@ export default function CheckoutModal({
                   <p className="text-muted text-[13px]">
                     You hold{' '}
                     <span className="text-parchment">{ticketCount}</span> of{' '}
-                    <span className="text-parchment">{totalTickets}</span> tickets —{' '}
+                    <span className="text-parchment">{totalTickets}</span> tickets,{' '}
                     <span className="text-amber-400">{odds}% chance</span>
                   </p>
                   <p className="text-muted text-[13px]">Draw closes {drawDateFormatted}</p>

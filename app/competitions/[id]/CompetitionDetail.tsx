@@ -381,7 +381,7 @@ export default function CompetitionDetail({ competition }: CompetitionDetailProp
                       }`}
                     >
                       {effectiveQty > 0
-                        ? `Enter Draw · £${totalPrice % 1 === 0 ? totalPrice : totalPrice.toFixed(2)}`
+                        ? `Enter Draw £${totalPrice % 1 === 0 ? totalPrice : totalPrice.toFixed(2)}`
                         : 'Select tickets to enter'}
                     </button>
 
@@ -458,7 +458,7 @@ export default function CompetitionDetail({ competition }: CompetitionDetailProp
           <div className="flex-1 min-w-0">
             {effectiveQty > 0 ? (
               <p className="text-muted text-[12px] truncate">
-                {effectiveQty} ticket{effectiveQty !== 1 ? 's' : ''} · <span className="text-parchment">£{totalPrice % 1 === 0 ? totalPrice : totalPrice.toFixed(2)}</span>
+                {effectiveQty} ticket{effectiveQty !== 1 ? 's' : ''} <span className="text-parchment">£{totalPrice % 1 === 0 ? totalPrice : totalPrice.toFixed(2)}</span>
               </p>
             ) : (
               <p className="text-muted text-[12px]">Select tickets above</p>

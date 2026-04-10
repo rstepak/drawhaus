@@ -6,7 +6,7 @@ import type { AccordionItem } from '@/components/ui/Accordion';
 import OddsCalculator from '@/components/sections/OddsCalculator';
 
 export const metadata: Metadata = {
-  title: 'For Fans — Drawhaus',
+  title: 'For Fans | Drawhaus',
   description:
     'Transparent odds, real prizes, fair draws. Here\'s exactly how Drawhaus competitions work, what your odds are, and why you can trust the process.',
 };
@@ -16,13 +16,13 @@ const steps = [
     number: '01',
     title: 'The prize is verified first',
     description:
-      'Before any competition goes live, we confirm the item is physically in the creator\'s possession. We check provenance — box, receipt, or serial number where applicable. No competition goes live until this step is complete.',
+      'Before any competition goes live, we confirm the item is physically in the creator\'s possession. We check provenance: box, receipt, or serial number where applicable. No competition goes live until this step is complete.',
   },
   {
     number: '02',
     title: 'Tickets go on sale',
     description:
-      'Paid tickets are available to purchase on the competition page. Every competition also includes a free postal entry route — you never have to spend money to enter.',
+      'Paid tickets are available to purchase on the competition page. Every competition also includes a free postal entry route. You never have to spend money to enter.',
   },
   {
     number: '03',
@@ -40,7 +40,7 @@ const steps = [
     number: '05',
     title: 'A live recorded draw picks the winner',
     description:
-      'The winner is selected using a verified random process, conducted live on video. The full draw is recorded and published. Every entry — paid and postal — is included.',
+      'The winner is selected using a verified random process, conducted live on video. The full draw is recorded and published. Every entry, paid and postal, is included.',
   },
   {
     number: '06',
@@ -73,7 +73,7 @@ const trustCards = [
     icon: '⚖️',
     title: 'Skill Question Required',
     description:
-      'A skill question is part of every entry. This is what keeps Drawhaus competitions legal under UK prize competition law — and what separates us from an unlicensed lottery.',
+      'A skill question is part of every entry. This is what keeps Drawhaus competitions legal under UK prize competition law, and what separates us from an unlicensed lottery.',
   },
 ];
 
@@ -81,7 +81,7 @@ const faqItems: AccordionItem[] = [
   {
     question: 'Can I get a refund on my tickets?',
     answer:
-      'All ticket purchases are final once a competition is entered. The only exception is if Drawhaus cancels a competition — in that case, all ticket purchasers receive a full refund automatically.',
+      'All ticket purchases are final once a competition is entered. The only exception is if Drawhaus cancels a competition, in which case all ticket purchasers receive a full refund automatically.',
   },
   {
     question: 'What happens if the competition doesn\'t sell all its tickets?',
@@ -237,24 +237,24 @@ export default function ForFansPage() {
                   <p>
                     If a draw has 1,000 total tickets and you buy 1 ticket, your odds of winning
                     are{' '}
-                    <span className="text-parchment">1 in 1,000 — or 0.1%.</span>
+                    <span className="text-parchment">1 in 1,000, or 0.1%.</span>
                   </p>
                   <p>
                     If you buy 10 tickets in the same draw, your odds are{' '}
-                    <span className="text-parchment">10 in 1,000 — or 1%.</span>
+                    <span className="text-parchment">10 in 1,000, or 1%.</span>
                   </p>
                   <p>Every competition page shows:</p>
                   <ul className="space-y-1 pl-0">
                     <li className="flex gap-3">
-                      <span className="text-gold shrink-0">—</span>
+                      <span className="text-gold shrink-0">·</span>
                       <span>Total tickets available</span>
                     </li>
                     <li className="flex gap-3">
-                      <span className="text-gold shrink-0">—</span>
+                      <span className="text-gold shrink-0">·</span>
                       <span>Tickets sold so far (updated in real time)</span>
                     </li>
                     <li className="flex gap-3">
-                      <span className="text-gold shrink-0">—</span>
+                      <span className="text-gold shrink-0">·</span>
                       <span>
                         Your current odds (calculated automatically based on how many you&rsquo;ve
                         selected)
@@ -306,7 +306,7 @@ export default function ForFansPage() {
               <div className="space-y-5 text-muted text-base leading-relaxed">
                 <p>
                   Every single competition on Drawhaus includes a free postal entry route. This
-                  is a legal requirement we take seriously — not a loophole we hide in the small
+                  is a legal requirement we take seriously, not a loophole we hide in the small
                   print.
                 </p>
                 <p className="text-parchment text-sm tracking-wide">
@@ -428,7 +428,7 @@ export default function ForFansPage() {
 
                 <p>
                   Drawhaus competitions require a correctly answered skill question to enter. A
-                  free postal entry route is always available. Both of these are non-negotiable
+                  free postal entry route is always available. Both of these are non negotiable
                   on our platform.
                 </p>
                 <p>

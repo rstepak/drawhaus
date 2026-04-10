@@ -47,7 +47,7 @@ export default function OddsNudge({
       <p className="text-muted text-[13px] tracking-wide leading-relaxed transition-all duration-300 animate-fade-in">
         {coveringTier.label ?? `${coveringTier.quantity} tickets`} gets you to {nextMilestone}% odds
         {coveringTier.saving > 0 && (
-          <span className="text-amber-500/80"> — saves £{coveringTier.saving}</span>
+          <span className="text-amber-500/80"> saves £{coveringTier.saving}</span>
         )}
       </p>
     )

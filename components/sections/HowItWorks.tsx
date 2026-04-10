@@ -3,7 +3,7 @@ const steps = [
     number: '01',
     title: 'List',
     description:
-      'Influencers submit their most prized personal possessions — limited editions, one-of-a-kind pieces, and cultural artefacts with real value.',
+      'Influencers submit their most prized personal possessions: limited editions, one of a kind pieces, and cultural artefacts with real value.',
   },
   {
     number: '02',
