@@ -23,7 +23,7 @@ export default function FeaturedPrize() {
           {/* Prize image */}
           <div className="relative h-56 overflow-hidden shrink-0">
             <Image
-              src="/images/rolex.jpg"
+              src="/images/ap-royal-oak.jpg"
               alt={comp.title}
               fill
               className="object-cover object-[center_30%] transition-transform duration-500 group-hover:scale-[1.03]"
