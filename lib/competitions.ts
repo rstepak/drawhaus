@@ -23,6 +23,7 @@ export interface SkillQuestion {
 export interface Competition {
   id: string
   title: string
+  image?: string // optional photo path under /images/
   creatorHandle: string
   creatorAvatar: string // placeholder initials
   prizeValue: number
@@ -46,6 +47,7 @@ export const COMPETITIONS: Competition[] = [
   {
     id: 'ap-royal-oak-000',
     title: 'Audemars Piguet Royal Oak',
+    image: '/images/ap-royal-oak.jpg',
     creatorHandle: '@jakerichards',
     creatorAvatar: 'JR',
     prizeValue: 40000,
@@ -75,6 +77,7 @@ export const COMPETITIONS: Competition[] = [
   {
     id: 'rolex-sub-001',
     title: 'Rolex Submariner Date',
+    image: '/images/rolex-submariner.jpg',
     creatorHandle: '@alexwatches',
     creatorAvatar: 'AW',
     prizeValue: 9500,
@@ -135,6 +138,7 @@ export const COMPETITIONS: Competition[] = [
   {
     id: 'nike-sb-dunk-003',
     title: 'Nike SB Dunk Low Pro',
+    image: '/images/sneakers.png',
     creatorHandle: '@marcokicks',
     creatorAvatar: 'MK',
     prizeValue: 650,

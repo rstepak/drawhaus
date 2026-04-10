@@ -6,6 +6,7 @@
 // which returns { correct: boolean } without exposing the correct index.
 
 import { useState, useRef } from 'react';
+import Image from 'next/image';
 import type { Competition } from '@/lib/competitions';
 import TicketProgressBar from '@/components/draw/TicketProgressBar';
 import CountdownTimer from '@/components/draw/CountdownTimer';
@@ -119,22 +120,32 @@ export default function CompetitionDetail({ competition }: CompetitionDetailProp
 
           {/* ── LEFT COLUMN: Prize info ── */}
           <div className="flex-1 min-w-0">
-            {/* Prize image placeholder */}
+            {/* Prize image */}
             <div
               className="relative w-full bg-surface-raised border border-border overflow-hidden mb-8"
               style={{ aspectRatio: '4/3' }}
             >
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-8xl opacity-10 select-none" aria-hidden="true">
-                  {competition.category === 'watches' ? '⌚'
-                    : competition.category === 'fashion' ? '👜'
-                    : competition.category === 'sneakers' ? '👟'
-                    : competition.category === 'jewellery' ? '💎'
-                    : competition.category === 'electronics' ? '📱'
-                    : '🏆'}
-                </span>
-              </div>
-              {/* Subtle radial light */}
+              {competition.image ? (
+                <Image
+                  src={competition.image}
+                  alt={competition.title}
+                  fill
+                  className="object-cover object-center"
+                  priority
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+              ) : (
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <span className="text-8xl opacity-10 select-none" aria-hidden="true">
+                    {competition.category === 'watches' ? '⌚'
+                      : competition.category === 'fashion' ? '👜'
+                      : competition.category === 'sneakers' ? '👟'
+                      : competition.category === 'jewellery' ? '💎'
+                      : competition.category === 'electronics' ? '📱'
+                      : '🏆'}
+                  </span>
+                </div>
+              )}
               <div
                 className="absolute inset-0 pointer-events-none"
                 style={{
