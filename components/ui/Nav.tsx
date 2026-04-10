@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import LogoFull from '@/components/ui/LogoFull';
 
 interface NavProps {
   className?: string;
@@ -14,12 +15,8 @@ export default function Nav({ className = '' }: NavProps) {
         WebkitBackdropFilter: 'blur(12px)',
       }}
     >
-      <Link
-        href="/"
-        className="text-parchment text-sm font-semibold tracking-[0.2em] uppercase transition-colors hover:text-gold"
-        style={{ fontFamily: 'var(--font-geist-sans)' }}
-      >
-        Drawhaus
+      <Link href="/" className="text-parchment transition-colors hover:text-gold" aria-label="Drawhaus home">
+        <LogoFull className="h-9 w-auto" />
       </Link>
       <nav className="flex items-center gap-6 sm:gap-8">
         <Link

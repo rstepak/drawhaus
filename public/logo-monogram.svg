@@ -1,0 +1,6 @@
+<svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Drawhaus monogram mark -->
+  <rect x="0" y="0" width="80" height="80" rx="4" stroke="#C6A355" stroke-width="2" fill="none"/>
+  <path d="M24 16 L24 64 L40 64 Q58 64 58 40 Q58 16 40 16 Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+  <line x1="24" y1="40" x2="58" y2="40" stroke="#C6A355" stroke-width="2"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg width="440" height="80" viewBox="0 0 440 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Drawhaus full lockup — dark variant -->
+  <rect x="0" y="0" width="440" height="80" rx="4" fill="#0A0A0A"/>
+  <rect x="16" y="16" width="48" height="48" rx="2" stroke="#C6A355" stroke-width="1.5" fill="none"/>
+  <path d="M28 24 L28 56 L38 56 Q50 56 50 40 Q50 24 38 24 Z" fill="none" stroke="#F5F0E8" stroke-width="2.5" stroke-linejoin="round"/>
+  <line x1="28" y1="40" x2="50" y2="40" stroke="#C6A355" stroke-width="1.5"/>
+  <text x="78" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="18" font-weight="500" letter-spacing="0.28em" fill="#F5F0E8">DRAWHAUS</text>
+  <line x1="78" y1="52" x2="270" y2="52" stroke="#C6A355" stroke-width="0.75"/>
+  <text x="78" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="9" letter-spacing="0.3em" fill="#8A8A7A">PRIZE COMPETITIONS</text>
+</svg>

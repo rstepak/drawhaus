@@ -45,3 +45,6 @@ next-env.d.ts
 /*.jpg
 /*.jpeg
 Screenshot*
+
+# source asset staging folder
+/files/
