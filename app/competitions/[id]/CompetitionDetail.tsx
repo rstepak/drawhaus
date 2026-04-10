@@ -114,7 +114,7 @@ export default function CompetitionDetail({ competition }: CompetitionDetailProp
 
   return (
     <>
-      <div className="px-8 md:px-12 lg:px-20 py-10 md:py-16">
+      <div className="px-8 md:px-12 lg:px-20 py-10 md:py-16 pb-24 lg:pb-16">
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 max-w-7xl mx-auto">
 
           {/* ── LEFT COLUMN: Prize info ── */}
@@ -361,7 +361,7 @@ export default function CompetitionDetail({ competition }: CompetitionDetailProp
                   {/* Wrong answer message — never reveals correct answer */}
                   {answerState === 'wrong' && (
                     <p className="text-muted text-[13px] mt-3 animate-fade-in">
-                      Not quite — give it another try.
+                      Not quite. Give it another try.
                     </p>
                   )}
                 </div>
@@ -381,7 +381,7 @@ export default function CompetitionDetail({ competition }: CompetitionDetailProp
                       }`}
                     >
                       {effectiveQty > 0
-                        ? `Enter Draw — £${totalPrice % 1 === 0 ? totalPrice : totalPrice.toFixed(2)}`
+                        ? `Enter Draw · £${totalPrice % 1 === 0 ? totalPrice : totalPrice.toFixed(2)}`
                         : 'Select tickets to enter'}
                     </button>
 
@@ -449,6 +449,34 @@ export default function CompetitionDetail({ competition }: CompetitionDetailProp
           </div>
         </div>
       </div>
+
+      {/* Sticky mobile CTA bar */}
+      {!purchaseComplete && (
+        <div className="lg:hidden fixed bottom-0 left-0 right-0 z-40 border-t border-border px-4 py-3 flex items-center gap-3"
+          style={{ background: 'rgba(12,11,10,0.96)', backdropFilter: 'blur(12px)', WebkitBackdropFilter: 'blur(12px)' }}
+        >
+          <div className="flex-1 min-w-0">
+            {effectiveQty > 0 ? (
+              <p className="text-muted text-[12px] truncate">
+                {effectiveQty} ticket{effectiveQty !== 1 ? 's' : ''} · <span className="text-parchment">£{totalPrice % 1 === 0 ? totalPrice : totalPrice.toFixed(2)}</span>
+              </p>
+            ) : (
+              <p className="text-muted text-[12px]">Select tickets above</p>
+            )}
+          </div>
+          <button
+            disabled={!canCheckout}
+            onClick={() => setModalOpen(true)}
+            className={`shrink-0 px-5 py-3 text-[13px] tracking-[0.15em] uppercase font-semibold transition-all duration-200 ${
+              canCheckout
+                ? 'bg-gold text-background hover:bg-gold-light'
+                : 'bg-surface-raised text-muted border border-border cursor-not-allowed'
+            }`}
+          >
+            Enter Draw
+          </button>
+        </div>
+      )}
 
       {/* Checkout modal */}
       <CheckoutModal

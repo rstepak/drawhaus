@@ -21,7 +21,7 @@ export default function Hero() {
       {/* Hero body — split layout on desktop */}
       <div className="relative z-10 flex flex-1 flex-col lg:flex-row lg:items-center">
         {/* Left: text content */}
-        <div className="flex flex-1 flex-col justify-center px-8 md:px-12 lg:px-16 xl:px-20 pb-24 pt-8">
+        <div className="flex flex-1 flex-col justify-center px-6 md:px-12 lg:px-16 xl:px-20 pb-16 md:pb-24 pt-8">
           <div className="max-w-2xl">
             {/* Label */}
             <p className="animate-fade-up text-xs text-gold tracking-[0.25em] uppercase mb-8">
@@ -49,7 +49,7 @@ export default function Hero() {
 
             {/* Body copy */}
             <p className="animate-fade-up-delay-2 text-muted text-base md:text-lg leading-relaxed mb-12 max-w-lg">
-              Creators list what they own. Fans enter to win it. A live draw decides — on camera, in real time, no exceptions.
+              Creators list what they own. Fans enter to win it. A live draw decides, on camera, in real time, no exceptions.
             </p>
 
             {/* Waitlist form */}
@@ -98,7 +98,7 @@ export default function Hero() {
       </div>
 
       {/* Bottom rule */}
-      <div className="relative z-10 h-px bg-border mx-8 md:mx-12" />
+      <div className="relative z-10 h-px bg-border mx-6 md:mx-12" />
     </section>
   );
 }

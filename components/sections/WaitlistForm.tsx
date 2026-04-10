@@ -71,7 +71,7 @@ export default function WaitlistForm({ hint }: WaitlistFormProps) {
   return (
     <form onSubmit={handleSubmit} className="w-full">
       <div
-        className="flex items-stretch border border-border rounded-none overflow-hidden transition-colors focus-within:border-gold"
+        className="flex flex-col sm:flex-row items-stretch border border-border rounded-none overflow-hidden transition-colors focus-within:border-gold"
         style={{ maxWidth: '480px' }}
       >
         <input
@@ -87,7 +87,7 @@ export default function WaitlistForm({ hint }: WaitlistFormProps) {
         <button
           type="submit"
           disabled={status === 'loading'}
-          className="bg-gold text-[#0c0b0a] px-6 py-4 text-xs font-semibold tracking-widest uppercase whitespace-nowrap transition-colors hover:bg-gold-light disabled:opacity-60 disabled:cursor-not-allowed"
+          className="bg-gold text-[#0c0b0a] px-6 py-4 text-xs font-semibold tracking-widest uppercase whitespace-nowrap transition-colors hover:bg-gold-light disabled:opacity-60 disabled:cursor-not-allowed border-t sm:border-t-0 border-border"
         >
           {status === 'loading' ? (
             <span className="inline-block w-4 h-4 border border-[#0c0b0a] border-t-transparent rounded-full animate-spin" />

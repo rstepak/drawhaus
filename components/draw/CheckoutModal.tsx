@@ -97,14 +97,14 @@ export default function CheckoutModal({
 
       {/* Modal card */}
       <div
-        className="fixed inset-0 z-50 flex items-center justify-center px-4 pointer-events-none"
+        className="fixed inset-0 z-50 flex items-end sm:items-center justify-center sm:px-4 pointer-events-none"
         role="dialog"
         aria-modal="true"
         aria-label="Checkout"
       >
         <div
-          className="w-full max-w-md bg-surface border border-border pointer-events-auto animate-scale-in"
-          style={{ maxHeight: '90vh', overflowY: 'auto' }}
+          className="w-full sm:max-w-md bg-surface border-t sm:border border-border pointer-events-auto animate-scale-in rounded-t-lg sm:rounded-none"
+          style={{ maxHeight: '92vh', overflowY: 'auto' }}
         >
           {/* Modal header */}
           <div className="flex items-center justify-between px-6 py-5 border-b border-border">
@@ -186,7 +186,7 @@ export default function CheckoutModal({
                 {/* TODO: Replace this entire form with <Stripe Elements> or a Stripe Checkout redirect.
                     Card data entered here is NOT processed or stored — this is UI-only mock. */}
                 <p className="text-muted text-[13px] tracking-wide">
-                  Mock payment form — no real processing occurs.
+                  Mock payment form. No real processing occurs.
                 </p>
 
                 <div>
@@ -244,7 +244,7 @@ export default function CheckoutModal({
                   onClick={handlePurchase}
                   className="w-full py-3.5 text-[14px] tracking-[0.15em] uppercase bg-gold text-background font-semibold hover:bg-gold-light transition-colors duration-150 animate-pulse-gold"
                 >
-                  Complete purchase — £{totalPrice.toFixed(2)}
+                  Complete purchase · £{totalPrice.toFixed(2)}
                 </button>
 
                 {/* Stripe placeholder badge */}
