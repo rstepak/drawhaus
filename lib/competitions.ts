@@ -44,6 +44,35 @@ export interface Competition {
 // Dates relative to 2026-04-09 (today)
 export const COMPETITIONS: Competition[] = [
   {
+    id: 'ap-royal-oak-000',
+    title: 'Audemars Piguet Royal Oak',
+    creatorHandle: '@jakerichards',
+    creatorAvatar: 'JR',
+    prizeValue: 40000,
+    ticketPrice: 15,
+    totalTickets: 3500,
+    ticketsSold: 412,
+    drawDate: '2026-05-01T20:00:00Z',
+    category: 'watches',
+    description:
+      'A pristine Audemars Piguet Royal Oak 15202ST in stainless steel with the signature Grande Tapisserie dial. Ref. 15202ST.OO.1240ST.01. Full set: box, papers, and original purchase receipt from an authorised dealer.',
+    verified: true,
+    status: 'active',
+    viewerCount: 41,
+    recentEntrants: ['Oliver', 'Charlotte', 'Harry', 'Amelia', 'George'],
+    bulkPricing: [
+      { quantity: 1,  price: 15,  pricePerTicket: 15,   saving: 0   },
+      { quantity: 5,  price: 70,  pricePerTicket: 14,   saving: 5   },
+      { quantity: 10, price: 130, pricePerTicket: 13,   saving: 20,  popular: true },
+      { quantity: 25, price: 300, pricePerTicket: 12,   saving: 75,  label: 'Best value' },
+    ],
+    skillQuestion: {
+      question: 'In which country is Audemars Piguet headquartered?',
+      options: ['France', 'Germany', 'Switzerland', 'Austria'],
+      _ci: 2,
+    },
+  },
+  {
     id: 'rolex-sub-001',
     title: 'Rolex Submariner Date',
     creatorHandle: '@alexwatches',
