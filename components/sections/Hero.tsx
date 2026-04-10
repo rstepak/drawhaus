@@ -18,10 +18,30 @@ export default function Hero() {
       {/* Nav */}
       <Nav className="relative z-10" />
 
+      {/* Mobile image — full width, below nav */}
+      <div className="relative lg:hidden w-full h-56 sm:h-72 shrink-0">
+        <Image
+          src="/images/rolex-daytona.jpg"
+          alt="Rolex Daytona Cosmograph"
+          fill
+          className="object-cover object-center"
+          priority
+          quality={90}
+          sizes="100vw"
+        />
+        {/* Fade bottom into background */}
+        <div
+          aria-hidden="true"
+          className="absolute bottom-0 left-0 right-0 h-32"
+          style={{ background: 'linear-gradient(to top, #0c0b0a, transparent)' }}
+        />
+        <div aria-hidden="true" className="absolute inset-0" style={{ background: 'rgba(12,11,10,0.3)' }} />
+      </div>
+
       {/* Hero body — split layout on desktop */}
       <div className="relative z-10 flex flex-1 flex-col lg:flex-row lg:items-center">
         {/* Left: text content */}
-        <div className="flex flex-1 flex-col justify-center px-6 md:px-12 lg:px-16 xl:px-20 pb-16 md:pb-24 pt-8">
+        <div className="flex flex-1 flex-col justify-center px-6 md:px-12 lg:px-16 xl:px-20 pb-16 md:pb-24 pt-4 lg:pt-8">
           <div className="max-w-2xl">
             {/* Label */}
             <p className="animate-fade-up text-xs text-gold tracking-[0.25em] uppercase mb-8">
